@@ -12,7 +12,7 @@ import (
 
 const (
 	BlockInterval            uint64 = 2 // time interval between two consecutive blocks.
-	InitialMaxBlockProposers uint64 = 5
+	InitialMaxBlockProposers uint64 = 4
 	CheckpointInterval              = 180 // blocks between two bft checkpoints.
 	NodeURL                         = "http://localhost:8689/"
 	AddressLength                   = 20
@@ -226,7 +226,6 @@ func main() {
 			- justified block number - finalized block number == 180.
 			- 180 <= head number - justified block number < 360.
 			- finalized block number >= 360.
-			- check the quality.
 	*/
 }
 
